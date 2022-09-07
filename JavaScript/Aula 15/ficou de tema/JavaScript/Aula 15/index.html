@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>UC12-JavaScript</title>
+		<meta name="description" content="UC12 - Aula 15">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Mauro B H Jr">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Estilo da página e ícone -->
+		<script type="text/javascript" src="./script.js"></script>
+	</head>
+	<!--<body onload="minhaFuncao()">-->
+	<body onload="minhaFuncaoExterna()">
+	<h1>Hellow World!</h1>
+	
+	<button onclick="minhaFuncao()">Olha só, um botão!</button>
+	<button onclick="abreGoogle()">Abre o google ae please!</button>
+	<button onclick="fechaGoogle()">Vlw, Pode fechar o google.</button>
+	<script>
+		function minhaFuncao(){
+			alert("Botão clicado");
+		}
+		function abreGoogle(){
+			janelaGoogle = window.open("http://google.com","","width=400, height=300");
+		}
+		function fechaGoogle(){
+			janelaGoogle.close();
+		}
+		
+	</script>
+	
+	
+	<header></header>
+	
+	<footer></footer>
+	</body>
+</html>

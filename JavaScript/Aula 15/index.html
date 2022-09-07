@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>UC12-JavaScript</title>
+		<meta name="description" content="UC12 - Aula 15">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Mauro B H Jr">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Estilo da página e ícone -->
+		<link rel="icon" type="image/icon" href="../../assets/Imagens/favicon.png"/>
+		<script type="text/javascript" src="./script.js"></script>
+	</head>
+	<!--<body onload="minhaFuncao()">-->
+	<body onload="minhaFuncaoExterna()">
+	<h1>Hellow World!</h1>
+	
+	<button onclick="minhaFuncao()">Olha só, um botão!</button>
+	
+	<button onclick="abreGoogle()">Abre o google ae please!</button>
+	
+	<button onclick="fechaGoogle()">Vlw, Pode fechar o google.</button>
+	
+	<br/>
+		Digite seu nome - onchange:
+		<input type="text" name="nome" placeholder="Nome aqui..." onchange="nomeAqui(this.value)"/>
+		
+		<br/><br/>
+		Quando formulário é enviado - onsubmit
+		<form action="" method="post" onsubmit="enviaForm()">
+			<input type="text" name="nome" placeholder="Nome aqui..." />
+			<input type="submit" value="Enviar"/>
+		</form>
+		
+		<br/><br/>
+		Digite seu nome ao perder o foco ... - onblur:
+		<input type="text" name="nome" id="nomeBlur" placeholder="Nome aqui..." onblur="nomeBlur()"/>
+		
+		<br/><br/>
+		Digite seu nome:
+		<input type="text" id="nomeFocus" onfocus="nomeOnFocus(this)" onblur="nomeOnBlur()">
+		<p>Quando receber foco deve ter um comportamento diferente de quando perder o foco.</p>
+
+		<br\><br\>
+		Digite algo - OnKeyPress:
+		<input type="text" id="textKeyPress" onkeypress="textKeyPress()">
+		<p>Quando uma tecla for pressionada faz algo.</p>
+
+		<br\><br\>
+		Digite algo - OnKeyUp:
+		<input type="text" id="textKeyUp" onkeyup="textKeyUp()">
+		<p>Quando uma tecla for pressionada e solta faz algo.</p>
+
+		<br\><br\>
+		<p id="pOn" onclick="pOnClick()"onmouseover="pMouseOver()" onmouseout="pMouseOut()">
+			Muda a cor do parágrafo quando clicando ou quando passa o mouse.
+		</p>
+		
+		<br\><br\>
+		<p ondblclick="duploClick()">
+			Clique duas vezes aqui <b>aqui</b> para ver o texto abaixo.
+		</p>
+		<p id="texto"></p>
+		
+		<br\><br\>
+		<div onmousemove="mostraCoord()" onmouseout="limpaCoord()" 
+		style="width: 200px; height: 100p; border: 1px solid red;"></div>
+		<p>Ao passar o mouse mostrará a coordenada do ponteiro.</p>
+		<p>Quando o mouse sair de cima da div, será limpa a coord.</p>
+		<p id="coord"></p>
+	
+	
+	<script>
+		function minhaFuncao(){
+			alert("Botão clicado");
+		}
+		function abreGoogle(){
+			janelaGoogle = window.open("http://google.com","","width=400, height=300");
+		}
+		function fechaGoogle(){
+			janelaGoogle.close();
+		}
+		
+		function nomeAqui(nome){
+				if (nome==""){
+					alert("Nome precisa ser informado!");
+				}else{
+					alert("Nome informado: " + nome);
+				}
+			}
+			
+		function enviaForm(){
+				alert("Form. envaido com sucesso!");
+			}
+			
+		function nomeBlur(){
+				nome = document.getElementById("nomeBlur");
+				nome.value = nome.value.toUpperCase();
+			}
+
+		function nomeOnFocus(nome){
+				nome.style.background="wheat";
+			}
+
+		function nomeOnBlur(){
+				nomeBlur = document.getElementById("nomeFocus");
+				nomeBlur.style.background = "whitesmoke";
+			}
+
+		function textKeyPress(){
+				text = document.getElementById("textKeyPress");
+				text.value = text.value.toUpperCase();
+			}
+
+		function textKeyUp(){
+				text = document.getElementById("textKeyUp");
+				text.value = text.value.toUpperCase();
+			}
+
+		function pOnClick(){
+				document.getElementById("pOn").style.background = "DarkGray";
+				document.getElementById("pOn").style.color = "whitesmoke";
+			}
+
+		function pMouseOver(){
+				document.getElementById("pOn").style.background = "DodgerBlue";
+				document.getElementById("pOn").style.color = "white";
+			}
+
+		function pMouseOut(){
+				document.getElementById("pOn").style.color = "wheat";
+			}
+
+		function duploClick(){
+				if(document.getElementById("texto").innerHTML==""){
+					document.getElementById("texto").innerHTML = "Olá Mundo!";
+				}else{
+					document.getElementById("texto").innerHTML = ""
+				}
+		}
+		
+		function mostraCoord(e){
+			x = e.client
+		}
+	</script>
+	<header></header>
+	
+	<footer></footer>
+	</body>
+</html>

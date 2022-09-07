@@ -1,0 +1,73 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family:Alegreya;
+	margin:0;
+	background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+header{
+	padding:60px;
+	text-align:center;
+	background-image: linear-gradient(to right, #141e30, #243b55);
+	color:white;
+}
+nav{
+	text-align:center;
+	background-color:#333;
+	width:100%;
+}
+nav ul{
+	margin:0;
+	padding: 10px 0;
+	/*Padding pode ser tratado como X Y se desejar simetria, sendo um padding x y tendo valores de padding top e bottom de valores x*/
+}
+nav li{
+	list-style-type: none;
+	display: inline;
+	padding: 10%;
+}
+nav a{
+	color:wheat;
+	text-decoration:none;
+	transition: 400ms;
+}
+nav a:hover{
+	color: orange;
+	font-size: 20px;
+}
+.container{
+	display:flex;
+	flex-wrap:wrap;
+	padding:0 1%;
+}
+.esquerda{
+	flex:30%;
+	background-color:#f1f1f1;
+	padding:20px;
+}
+.imgFake{
+	/*usando background com generator https://cssgradient.io/*/
+	background: rgb(64,7,107);
+	background: radial-gradient(circle, rgba(64,7,107,1) 13%, rgba(136,92,200,1) 51%, rgba(69,19,97,1) 78%);
+	padding:20px;
+	color:white;
+}
+.conteudo{
+	flex:70%;
+	background-color:white;
+	padding:20px;
+}
+.footer{
+	padding:20px;
+	background-color:#333;
+	text-align:center;
+	color:white;
+}
+@media screen and (max-width: 600px){
+	nav li{
+		display: block;
+		padding:0;
+	}
+	
+}

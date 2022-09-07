@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	font-family: verdana;
+	background-color:#F9F5EB;
+}
+header{
+	background-image: linear-gradient(white, darkgray);
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+nav{
+	background-color: #333;
+	width: 100%;
+	float: left;
+	display:flex;
+	justify-content:center;
+}
+.menu ul{
+	padding-left:0px;
+}
+.menu ul li{
+	list-style-type:none;
+	display:inline;
+	float:left;
+}
+.menu a{
+	padding: 15px;
+	display: block; /*Adiciona bloco na tag a*/
+	color: #f2f2f2;
+	text-align:center;
+	text-decoration:none;
+}
+.menu a:hover{
+	background-color: rgb(207,66,66);
+	transition: 0.5s;
+}
+section{
+	border: 1px solid black;
+	width: 50%;
+	margin:auto;
+	background-color:white;
+}
+.tbPreco{
+	width:100%;
+	border-collapse: collapse; /*Aplica Formatação na primeira linha*/
+	text-align:center;
+	
+}
+.tbPreco tr, td{
+	padding:8px;
+	border: 1px solid darkblue;
+}
+.tbPreco th{
+	color: darkblue;
+	font-size: 20px;
+}
+.divNotas{
+	overflow-x:auto;
+}
+.tbnotas{
+	font-family: arial;
+	width:100%;
+	text-align:center;
+	border-collapse: collapse;
+}
+.tbnotas td, th{
+	border:1px solid black;
+	padding: 8px;
+}
+/*"even" coloca cor nas linhas par, para ímpar deve usar odd*/
+.tbNotas tr:nth-child(even){
+	background-color:gray;
+}
+
+.tbNotas tr:hover :not(th){
+	background-color: #607EAA;
+}
+
+.tbNotas th{
+	padding-top:12;
+	padding-bottom:12px;
+	background-color: #1C3879;
+	color: #F9F5EB;
+}
+.galeria{
+	border: 1px solid black; /*apenas para visualizar a div*/
+	padding-top:10px;
+	margin:auto;
+	width:90%;
+	float:left;
+	
+}
+img{
+	width: 400px;
+	height: auto;
+	border-radius: 8%;
+}
+.img_um{
+	float:left;
+	padding-left:10px;
+}
+.img_dois{
+	float:left;
+	padding-left:10px;
+}
+.img_tres{
+	float:left;
+	padding-left:10px;
+}
+.img_quatro{
+	float:left;
+	padding-left:10px;
+}
+.galeria img:hover{
+	border-radius:20%;
+	opacity: 0.5;
+}

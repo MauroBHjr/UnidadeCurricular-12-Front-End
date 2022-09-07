@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>UC12-Formulário</title>
+		<meta name="description" content="UC12 - Aula 11">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Mauro B H Jr">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/icon" href="../../assets/Imagens/favicon.png"/>
+		<!-- Estilo da página -->
+		<link rel="stylesheet" href="estilo.css"/>
+	</head>
+	<body>
+		<header>
+			<h1>Usando Formulário</h1>
+		</header>
+		<form action="" method="" name="">
+			<label for="nome">Nome: </label>
+			<input id="nome" type="text" name="nome"/>
+			<br/><br/>
+			<label for="endereco">Endereço: </label>
+			<input id="endereco" type="text" name="endereco" maxlength="60" placeholder="Endereço Completo aqui..."/>
+			<br/><br/>
+			<label for="idade">Idade: </label>
+			<input id="idade" type="number" step="1" name="idade" min="1"/>
+			<br/><br/>
+			<label for="email">Endereço de e-mail: </label>
+			<input id="email" type="email" name="email"/>
+			<br/><br/>
+			<label for="dtNasc">Data de Nascimento: </label>
+			<input id="dtNasc" type="date" name="dtNasc" />
+			<br/><br/>
+			<label for="senha">Senha: </label>
+			<input id="senha" type="password" name="senha" placeholder="Digite senha"/>
+			<br/><br/>
+			<input type="reset" value="Limpar"/>
+			<input type="submit" value="Enviar"/>
+		</form>
+		<br/><br/>
+		<hr/>
+		<h2>Radio Nutton</h2>
+		<form>
+			<label for="nome2">Nome: </label>
+			<input id="nome2" type="text" name="nome2" required />
+			<br/><br/>
+			<fieldset>
+			<legend>Qual turno você estuda?</legend>
+			<input type="radio" id="manha" name="turno" value="Manhã"/>
+			<label for="manha">Manhã</label>
+			<br/>
+			<input type="radio" id="tarde" name="turno" value="Tarde"/>
+			<label for=tarde">Tarde</label>
+			<br/>
+			<input type="radio" id="noite" name="turno" value="Noite"/>
+			<label for="noite">Noite</label>
+			<br/>
+			</fieldset>
+			<br/>
+			<input type="reset" value="Limpar"/>
+			<input type="submit" value="Enviar"/>
+		</form>
+		<br/><br/>
+		<hr/>
+		<h2>Radio Check</h2>
+		<form>
+			<label for="nome3">Nome: </label>
+			<input id="nome3" type="text" name="nome3" />
+			<br/><br/>
+			<fieldset >
+				<legend>Meios de transporte que usa?</legend>
+				<input type="checkbox" id="bike" name="bike" value="Bike"
+				<label for="bike">Bike</label>
+				<br/>
+				<input type="checkbox" id="carro" name="carro" value="Carro"
+				<label for="carro">Carro</label>
+				<br/>
+				<input type="checkbox" id="bus" name="bus" value="Bus"
+				<label for="bus">Busão</label>
+				<br/>
+				<input type="checkbox" id="app" name="app" value="Aplicativo"
+				<label for="app">Uber|99|Cabify|outro</label>
+				<br/>
+			</fieldset>
+			<br/>
+			<input type="reset" value="Limpar"/>
+			<input type="submit" value="Enviar"/>
+		</form>
+		<br/><br/>
+		<hr/>
+		<h2>Textarea</h2>
+		<form>
+			<label for="msg">Reclamação (300 Caracteres) </label>
+			<br/>
+			<textarea id="msg" name="msg" rows="10" cols="30" maxlength="300" placeholder="Escreva uma mensagem de até 300 caracteres"></textarea>
+			<br/>
+			<input type="reset" value="Limpar"/>
+			<input type="submit" value="Enviar"/>
+		</form>
+	</body>
+</html>

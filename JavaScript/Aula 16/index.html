@@ -27,7 +27,7 @@
             <p>CPF: <input type="text" id="cpf" name="cpf" oninput="mascaraCPF(this)"></p>
             <p>CNPJ: <input type="text" name="cnpj" id="cnpj" oninput="mascaraCNPJ(this)"></p>
             <p>Crie uma nova senha: <input type="password" name="alfredo" id="alfredo">
-            <br/>Confirme sua senha: <input type="password" name="alfredoR" id="alfredoR"></p>
+            <br/>Confirme sua senha: <input type="password" name="alfredoR" id="alfredoR" oninput="confirmaSenha(this)"></p>
 
             <input type="submit" value="Enviar" onclick="return validaForm()">
             <input type="reset" value="Limpa Form.">

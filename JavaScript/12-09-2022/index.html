@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>UC12-Formulário de Cadastro</title>
+		<meta name="description" content="UC12 - Aula 18">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="Mauro B H Jr">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/icon" href="../../assets/Imagens/favicon.png"/>
+		<!-- Estilo da página -->
+		<link rel="stylesheet" href="estilo.css"/>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Formulário de Contato</h1>
+		</header>
+		<div class="container">
+			<div class="menuSelecao">
+				<h2>Selecione o tipo de cadastro</h2>
+				<div class="row">
+					<input type="button" id="CadPF" value="Cadastrar Pessoa Física" name="CadPF" onclick="CadForm.hidden = false"/>
+					<input type="button" id="CadPJ" value="Cadastrar Pessoa Jurídica" name="CadPJ" onclick="return chamaCadPJ()"/>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<h2>Laboratório maluco</h2>
+			<div class="circle" id="circle"></div>
+			<div class="rounded" id="rounded"></div>
+			<div class="square" id="square"></div>
+
+			<script type="text/javascript">
+				function showStuff(id) {
+				  document.getElementById(id).style.display = 'block';
+				}
+				</script>
+				
+				
+				<td class="post">
+				
+				  <a href="#" onclick="showStuff('answer1'); return false;">Edit</a>
+				  <span id="answer1" style="display: none;">
+					<textarea rows="10" cols="115"></textarea>
+				  </span>
+				
+				  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+				</td>
+				
+
+		</div>
+		<div class="container" id="CadForm" hidden>
+			<form>
+				<div class="row">
+					<div class="col_01">
+						<label for="nome">Nome: </label>
+					</div>
+					<div class="col_02">
+						<input id="nome" name="nome" type="text" placeholder="Insira seu nome completo"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col_01">
+						<label for="email">Endereço de e-mail: </label>
+					</div>
+					<div class="col_02">
+						<input id="email" name="email" type="text" placeholder="exemple@exemple.com"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col_01">
+						<label for="estado">Estado: </label>
+					</div>
+					<div class="col_02">
+					<select id="estado" name="estado" placeholder="selecione um estado">
+						<option value="">Selecione...</option>
+						<option value="AC">Acre</option>
+						<option value="AL">Alagoas</option>
+						<option value="AP">Amapá</option>
+						<option value="AM">Amazonas</option>
+						<option value="BA">Bahía</option>
+						<option value="CE">Ceará</option>
+						<option value="DF">Distrito Federal</option>
+						<option value="ES">Espírito Santo</option>
+						<option value="GO">Goiás</option>
+						<option value="MA">Maranhão</option>
+						<option value="MT">Mato Grosso</option>
+						<option value="MS">Mato Grosso do Sul</option>
+						<option value="MG">Minas Gerais</option>
+						<option value="PA">Pará</option>
+						<option value="PB">Paraíba</option>
+						<option value="PR">Paraná</option>
+						<option value="PE">Pernambuco</option>
+						<option value="PI">Piauí</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="RS">Rio Grande do Sul</option>
+						<option value="RO">Rondônia</option>
+						<option value="RR">Roraima</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="SP">São Paulo</option>
+						<option value="SE">Sergipe</option>
+						<option value="TO">Tocantins</option>
+					</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col_01">
+						<label for="msg">Deixe sua mensagem: </label>
+					</div>
+					<div class="col_02">
+						<textarea id="msg" name="msg" placeholder="sua opinião aqui"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<input type="reset" value="Limpar"/>
+					<input type="submit" value="Enviar"/>
+				</div>
+			</form>
+		</div>	
+	</body>
+</html>

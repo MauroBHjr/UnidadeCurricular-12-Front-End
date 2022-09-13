@@ -1,0 +1,122 @@
+*{
+	box-sizing:border-box;
+}
+/*body*/
+body{
+	background-color:whitesmoke;
+	margin:1%;
+	font-family: Arial, ArialMT, Sans-Serif;
+}
+/*header*/
+header{
+	text-align:center;
+	background-color:white;
+	padding: 2rem;
+}
+header h1{
+	font-size: 2.5em;
+}
+header p{
+	font-size: 0.8em;
+}
+/*Barra menu topo*/
+.menuTopo{
+	width:100%;
+	background-color:#303030;
+	margin-top:-1rem;
+	display:flex;
+	flex-wrap:wrap;
+}
+.menuTopo li{
+	display:inline;
+	padding: 0 2%;
+}
+.menuTopo a{
+	text-decoration:none;
+	color:white;
+	font-size:1.1rem;
+	display:inline;
+}
+.linkEsquerda{
+	flex: 30%;
+	text-align: left;
+	margin-left: -2%;
+}
+.linkDireita{
+	flex: 10%;
+	text-align: right;
+	padding-right: 2%;
+}
+/*Container principal*/
+.container{
+	display:flex;
+	flex-wrap:wrap;
+	padding:-1;
+	margin:-1;
+	height:100%;
+	width:100%;
+}
+/*Imagem*/
+.imgFake{
+	background-color:darkgrey;
+	padding:1rem;
+}
+	/*Section de postagens*/
+.content{
+	flex:60%;
+	float:left;
+}
+.content .imgFake{
+	display:block;
+	height:10rem; 
+	width:100%;
+}
+	/*Section de paineis*/
+.pannel{
+	flex:20%;
+	float:right;
+}
+.pannel .imgFake{
+	height:4rem; 
+	width:100%;
+}
+
+/*Postagens*/
+.postagens{
+	background-color:white;
+	padding:1rem;
+	margin-top:1em;
+}
+
+.postagens h2{
+	text-transform: uppercase;
+}
+/*About*/
+.aboutBox{
+	background-color:white;
+	padding:1rem;
+	margin-top:1rem;
+	margin-left:1rem;
+}
+
+/*Popular post*/
+.hotPost{
+	background-color:white;
+	padding:1rem;
+	margin-top:1rem;
+	margin-left:1rem;
+}
+/*Social*/
+.socialBox{
+	background-color:white;
+	padding:1rem;
+	margin-top:1rem;
+	margin-left:1rem;
+}
+/*footer*/
+footer{
+	text-align:center;
+	background-color:lightgray;
+	padding:2rem;
+	margin:1% 0;
+}

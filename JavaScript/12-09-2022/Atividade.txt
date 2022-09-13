@@ -1,0 +1,13 @@
+Refatorar o formulário para Cadastrar pessoa física ou Juridica
+
+Incluir Campos: Tipo de Pessoa - PF ou PJ (dica: usar Hide no type)
+
+Conforme a seleção
+
+usar input adequado
+
+Telefone ( Celular E  Fixo, Endereço, Estado Civil, sexo )
+
+e além disso: Validação c/ Javascript
+
+Máscara p/ os campos

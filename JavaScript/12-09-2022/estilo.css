@@ -87,6 +87,21 @@ input[type=button]{
 input[type=button]:hover{
 	opacity: 0.8;
 }
+input[type=radio]{
+	background-color:dodgerblue;
+	float:center;
+	font-family: commic sans;
+	font-size: medium;
+	color:white;
+	border-radius:5px;
+	border:none;
+	cursor:pointer;
+	padding: 1.5% 2%;
+	margin: 0.5%;
+}
+
+
+
 
 @media screen and (max-width: 600px){
 	.col_01, .col_02, input[type=reset], input[type=submit]{
